@@ -370,11 +370,6 @@ map <leader>x :e ~/buffer.md<cr>
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
-" Ctrl-x for cut
-vmap <C-x> :!pbcopy<cr>
-" Ctrl-c for copy
-vmap <C-c> :w !pbcopy<cr><cr>
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
