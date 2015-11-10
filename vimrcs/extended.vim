@@ -34,7 +34,7 @@ set guioptions-=L
 " Colorscheme
 if has("gui_running")
     set background=dark
-    colorscheme peaksea
+    colorscheme peaksea 
 	set guifont=courier_new:h13
 	au GUIEnter * simalt ~x
 	set guioptions-=m " Hide menu
@@ -44,7 +44,6 @@ if has("gui_running")
 else
     colorscheme desert
     let g:colors_name="desert"
-	set font=courier_new:h13
 endif
 " Full screen
 " map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR> 
