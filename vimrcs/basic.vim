@@ -71,6 +71,11 @@ nmap <Leader>v <C-V>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
+" Easy system clipboard copy/paste
+noremap <space>Y "*Y
+noremap <space>y "*y
+noremap <space>p "*p
+noremap <space>P "*P
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
