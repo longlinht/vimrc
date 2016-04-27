@@ -56,6 +56,12 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
+" Set to show command typed
+set showcmd
+
+" Set highlight current line
+set cursorline
+
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
 let mapleader = ";"
@@ -383,7 +389,9 @@ map <leader>pp :setlocal paste!<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>ct :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR> 
 set tags=tags;
-set autochdir 
+
+"Disable auto change current directory
+" set autochdir 
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
