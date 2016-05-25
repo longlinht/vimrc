@@ -387,7 +387,8 @@ map <leader>pp :setlocal paste!<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ctags
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>ct :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR> 
+"map <leader>ct :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR> 
+map <leader>ct :!ctags -R .<CR><CR> 
 set tags=tags;
 
 "Disable auto change current directory
