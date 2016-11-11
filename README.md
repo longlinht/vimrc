@@ -1,3 +1,21 @@
+# About 
+
+This repository is maintain my own vimrc forked from **amix** vimrc repository, I modified it meet my own need, so it differs from origin in some aspects.
+
+## Difference
+
+* Display line number - I think there is reason that amix disable line number, but I prefer to display it.
+
+* Add taglist plugin
+
+* Change leader to ";", amix's is "," and some my shortcuts and preference
+
+* Add some compatible feature for three platforms: Linux, Mac, Windows
+
+* Add **ctags** and **cscope** shortcuts
+
+Below is original Amix's stuff:
+
 # The Ultimate vimrc
 
 Over the last 8 years I have used and tweaked Vim. This is my Ultimate vimrc.
