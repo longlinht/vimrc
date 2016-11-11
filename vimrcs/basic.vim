@@ -78,10 +78,10 @@ nmap <Leader>v <C-V>
 command W w !sudo tee % > /dev/null
 
 " Easy system clipboard copy/paste
-noremap <space>Y "*Y
-noremap <space>y "*y
-noremap <space>p "*p
-noremap <space>P "*P
+noremap <space>Y "+Y
+noremap <space>y "+y
+noremap <space>p "+p
+noremap <space>P "+P
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
