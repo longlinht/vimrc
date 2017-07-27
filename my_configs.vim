@@ -93,14 +93,14 @@ if has("cscope")
   " go back to where you were before the search.
   "
 
-  "nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
-  "nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>
-  "nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
-  "nmap <C-\>t :cs find t <C-R>=expand("<cword>")<CR><CR>
-  "nmap <C-\>e :cs find e <C-R>=expand("<cword>")<CR><CR>
-  "nmap <C-\>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
-  "nmap <C-\>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
-  "nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+  nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+  nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+  nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+  nmap <C-\>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+  nmap <C-\>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+  nmap <C-\>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+  nmap <C-\>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+  nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
   nmap ;zs :cs find s <C-R>=expand("<cword>")<CR><CR>
   nmap ;zg :cs find g <C-R>=expand("<cword>")<CR><CR>
@@ -110,6 +110,16 @@ if has("cscope")
   nmap ;zf :cs find f <C-R>=expand("<cfile>")<CR><CR>
   nmap ;zi :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
   nmap ;zd :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+  nmap <space>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+  nmap <space>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+  nmap <space>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+  nmap <space>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+  nmap <space>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+  nmap <space>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+  nmap <space>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+  nmap <space>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+
 
 
 
