@@ -17,7 +17,7 @@ let [g:ctrlp_lines, g:ctrlp_allfiles, g:ctrlp_alltags, g:ctrlp_alldirs,
 if !exists('g:ctrlp_map') | let g:ctrlp_map = '<c-p>' | en
 if !exists('g:ctrlp_cmd') | let g:ctrlp_cmd = 'CtrlP' | en
 
-com! -n=? -com=dir CtrlP         cal ctrlp#init('fil', { 'dir': <q-args> })
+com! -n=? -com=dir CtrlP         cal ctrlp#init(0, { 'dir': <q-args> })
 com! -n=? -com=dir CtrlPMRUFiles cal ctrlp#init('mru', { 'dir': <q-args> })
 
 com! -bar CtrlPBuffer   cal ctrlp#init('buf')
@@ -39,7 +39,9 @@ if g:ctrlp_map != '' && !hasmapto('<plug>(ctrlp)')
 	exe 'map' g:ctrlp_map '<plug>(ctrlp)'
 en
 
-cal ctrlp#mrufiles#init()
+if !exists('g:ctrlp_types') || index(g:ctrlp_types, 'mru') >= 0
+	cal ctrlp#mrufiles#init()
+en
 
 com! -bar CtrlPTag      cal ctrlp#init(ctrlp#tag#id())
 com! -bar CtrlPQuickfix cal ctrlp#init(ctrlp#quickfix#id())
